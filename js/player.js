@@ -71,7 +71,7 @@ document.getElementById('btn-total').addEventListener('click', function () {
         return;
     }
     const coachExpense = getInputFieldValueById('coach-field');
-    if (isNaN(managerExpense)) {
+    if (isNaN(coachExpense)) {
         alert('Please insert a Number')
         return;
     }
