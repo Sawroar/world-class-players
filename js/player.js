@@ -76,6 +76,10 @@ document.getElementById('btn-total').addEventListener('click', function () {
         return;
     }
     const perPlayerBudget = getInputFieldValueById('player-field');
+    if (isNaN(perPlayerBudget)) {
+        alert('Please insert per player budget amount')
+        return;
+    }
     const playerExpenseTotal = perPlayerBudget * 5;
     const totalExpenseAmount = managerExpense + coachExpense + playerExpenseTotal;
     setValueById('total-expense', totalExpenseAmount);
